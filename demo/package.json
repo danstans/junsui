@@ -3,12 +3,15 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
+    "prepare": "panda codegen",
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
     "build:studio": "panda studio --build --outdir src/pages/studio",
     "preview": "astro preview",
     "panda:init": "panda init",
+    "panda:watch": "panda --watch",
+    "panda:studio": "panda studio",
     "astro": "astro"
   },
   "dependencies": {

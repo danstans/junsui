@@ -1,7 +1,7 @@
 import { defineTextStyles } from '@pandacss/dev'
 
 const textStyles = defineTextStyles({
-  xs: { value: { fontSize: 'xs', lineHeight: '1.125rem' } },
+  xs: { value: { fontSize: 'fontSize.xs', lineHeight: '1.125rem' } },
   sm: { value: { fontSize: 'sm', lineHeight: '1.25rem' } },
   md: { value: { fontSize: 'md', lineHeight: '1.5rem' } },
   lg: { value: { fontSize: 'lg', lineHeight: '1.75rem' } },

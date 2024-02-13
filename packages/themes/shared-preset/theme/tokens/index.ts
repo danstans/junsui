@@ -9,7 +9,7 @@ import { sizes } from './sizes'
 import { spacing } from './spacing'
 import { fontSizes, fontWeights, fonts, letterSpacings, lineHeights } from './typography'
 import { zIndex } from './z-index'
-import type { PresetOptions } from '../../../../types'
+import type { PresetOptions } from '../../../types'
 
 const createSharedTokens = (options: PresetOptions) => {
   return defineTokens({

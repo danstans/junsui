@@ -13,12 +13,12 @@ type SharedThemeType = {
 }
 
 const sharedTheme = (options?: SharedThemeType) => ({
-  keyframes,
-  textStyles,
-  tokens: createSharedTokens(options?.tokenOptions ?? {}),
   semanticTokens: createSharedSemanticTokens(),
   breakpoints: createSharedBreakpoints(options?.breakpointOptions),
+  keyframes,
   recipes,
+  textStyles,
+  tokens: createSharedTokens(options?.tokenOptions ?? {}),
 })
 
 export default sharedTheme

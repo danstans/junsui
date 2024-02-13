@@ -1,5 +1,5 @@
 import { defineSemanticTokens } from '@pandacss/dev'
-import type { BorderShadows } from '../../../../types'
+import type { BorderShadows } from '../../../types'
 
 const shadows: BorderShadows = defineSemanticTokens.shadows({
   xs: {

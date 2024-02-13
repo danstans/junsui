@@ -7,7 +7,8 @@ export default defineConfig({
   presets: [...createJunsuiTheme({ theme: 'kyoto' })],
 
   // Where to look for your css declarations
-  include: ['./src/**/*.{js,jsx,ts,tsx}', './pages/**/*.{js,jsx,ts,tsx}'],
+  include: ['./src/**/*.{ts,tsx,js,jsx,astro}', './pages/**/*.{ts,tsx,js,jsx,astro}'],
+
 
   // Files to exclude
   exclude: [],
