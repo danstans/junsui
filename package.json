@@ -6,7 +6,8 @@
     "dist/*"
   ],
   "scripts": {
-    "format": "@biomejs/biome format --write .",
+    "format": "biome format --write .",
+    "lint": "biome lint .",
     "panda:studio": "panda studio",
     "panda:codegen": "panda codegen --clean",
     "build": "tsup"

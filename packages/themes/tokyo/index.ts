@@ -1,6 +1,6 @@
 import { definePreset } from '@pandacss/dev'
 import type { Preset } from '@pandacss/types'
-import { createKyotoSemanticTokens } from './createKyotoSemanticTokens'
+import { createTokyoSemanticTokens } from './createTokyoSemanticTokens'
 import radixPreset, { type ColorRadixPresetOptions } from '@amandaguthrie/panda-preset-color-radix'
 import type { PresetOptions } from '../types'
 import { conditions, sharedTheme } from '../shared-preset'
@@ -18,9 +18,9 @@ const radixPresetConfig: ColorRadixPresetOptions = {
   semanticColorMap: { primary: { color: 'grass', default: 'dark' } },
 }
 
-const createKyotoPreset = (options: PresetOptions = defaultOptions): Preset[] => {
-  const semanticTokens = createKyotoSemanticTokens()
-  const kyotoPreset = definePreset({
+const createTokyoPreset = (options: PresetOptions = defaultOptions): Preset[] => {
+  const semanticTokens = createTokyoSemanticTokens()
+  const tokyoPreset = definePreset({
     theme: {
       extend: {
         ...sharedTheme({ breakpointOptions: { system: 'chakra' }, tokenOptions: options }),
@@ -30,7 +30,7 @@ const createKyotoPreset = (options: PresetOptions = defaultOptions): Preset[] =>
     conditions,
   })
 
-  return [radixPreset(radixPresetConfig), kyotoPreset]
+  return [radixPreset(radixPresetConfig), tokyoPreset]
 }
 
-export default createKyotoPreset
+export default createTokyoPreset

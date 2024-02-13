@@ -1,7 +1,7 @@
 import { defineSemanticTokens } from '@pandacss/dev'
-import type { BorderShadows, Colors, PresetOptions, Radius } from '../types'
+import type { PresetOptions } from '../types'
 
-export const createKyotoSemanticTokens = (options?: PresetOptions) => {
+export const createTokyoSemanticTokens = (options?: PresetOptions) => {
   return defineSemanticTokens({
     colors: {
       bg: {

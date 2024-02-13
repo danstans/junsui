@@ -23,30 +23,20 @@ const pascalCase = (s: string) =>
     .trim()
 
 const generateIndex = async (options: Options, scannedFiles: string[], cwd: string) => {
-  const {jsFramework } = options
+  const { jsFramework } = options
 
   const content = JSON.stringify({
-    components: scannedFiles
-      .sort()
-      .map((component) => ({
-        name: pascalCase(path.parse(component).name),
-        href: `https://junsui.com/registry/${jsFramework}/components/${
-          path.parse(component).name
-        }.json`,
-      })),
+    components: scannedFiles.sort().map((component) => ({
+      name: pascalCase(path.parse(component).name),
+      href: `https://junsui.com/registry/${jsFramework}/components/${
+        path.parse(component).name
+      }.json`,
+    })),
   })
 
   await fs.outputFile(
-    path.join(
-      rootDir,
-      'docs',
-      'public',
-      'registry',
-      jsFramework,
-      'components',
-      'index.json',
-    ),
-    content
+    path.join(rootDir, 'docs', 'public', 'registry', jsFramework, 'components', 'index.json'),
+    content,
   )
 }
 
@@ -54,34 +44,33 @@ const resolveComponents = async (options: Options, scannedFiles: string[], cwd: 
   const { jsFramework } = options
 
   await Promise.all(
-    scannedFiles
-      .map(async (component) => {
-        const componentName = path.parse(component).name
-        const content = fs.readFileSync(`${cwd}/${component}`, 'utf-8')
+    scannedFiles.map(async (component) => {
+      const componentName = path.parse(component).name
+      const content = fs.readFileSync(`${cwd}/${component}`, 'utf-8')
 
-        const registry = JSON.stringify({
-          files: [
-            {
-              filename: `${componentName}.tsx`,
-              content,
-              hasMultipleParts: content.includes('createStyleContext'),
-            },
-          ],
-        })
+      const registry = JSON.stringify({
+        files: [
+          {
+            filename: `${componentName}.tsx`,
+            content,
+            hasMultipleParts: content.includes('createStyleContext'),
+          },
+        ],
+      })
 
-        await fs.outputFile(
-          path.join(
-            rootDir,
-            'docs',
-            'public',
-            'registry',
-            jsFramework,
-            'components',
-            componentName.concat('.json'),
-          ),
-          registry,
-        )
-      }),
+      await fs.outputFile(
+        path.join(
+          rootDir,
+          'docs',
+          'public',
+          'registry',
+          jsFramework,
+          'components',
+          componentName.concat('.json'),
+        ),
+        registry,
+      )
+    }),
   )
 }
 
@@ -124,19 +113,15 @@ const resolveComponents = async (options: Options, scannedFiles: string[], cwd: 
 
 const main = async () => {
   const jsFrameworks = ['react'] as const
-  const glob = new Glob('*.tsx');
-  
-  
-  
+  const glob = new Glob('*.tsx')
+
   for (const jsFramework of jsFrameworks) {
-      const cwd = `${rootDir}/components/${jsFramework}`;
-      const scannedFiles = await Array.fromAsync(glob.scan({ cwd  }))
-      await generateIndex({  jsFramework }, scannedFiles, cwd)
-      await resolveComponents({ jsFramework }, scannedFiles, cwd)
-      // await resolveHelpers({ cssFramework, jsFramework })      
+    const cwd = `${rootDir}/components/${jsFramework}`
+    const scannedFiles = await Array.fromAsync(glob.scan({ cwd }))
+    await generateIndex({ jsFramework }, scannedFiles, cwd)
+    await resolveComponents({ jsFramework }, scannedFiles, cwd)
+    // await resolveHelpers({ cssFramework, jsFramework })
   }
-
-
 }
 
 main()

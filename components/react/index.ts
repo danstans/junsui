@@ -1,5 +1,3 @@
-import { JunsuiButton } from "./button";
+import { JunsuiButton } from './button'
 
-export {
-    JunsuiButton
-}
+export { JunsuiButton }
