@@ -1,1 +1,8 @@
-{"components":[{"name":"Button","href":"https://junsui.com/registry/react/components/button.json"}]}
+{
+  "components": [
+    {
+      "name": "Button",
+      "href": "https://junsui.com/registry/react/components/button.json"
+    }
+  ]
+}

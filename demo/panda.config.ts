@@ -1,13 +1,14 @@
-import { defineConfig } from "@pandacss/dev";
-import { createJunsuiTheme } from "../packages/themes";
+import { defineConfig } from '@pandacss/dev'
+import { createJunsuiTheme } from '../packages/themes'
 
 export default defineConfig({
   // Whether to use css reset
   preflight: true,
-  presets: [ ...createJunsuiTheme()],
+  presets: [...createJunsuiTheme({ theme: 'kyoto' })],
 
   // Where to look for your css declarations
-  include: ["./src/**/*.{js,jsx,ts,tsx}", "./pages/**/*.{js,jsx,ts,tsx}"],
+  include: ['./src/**/*.{ts,tsx,js,jsx,astro}', './pages/**/*.{ts,tsx,js,jsx,astro}'],
+
 
   // Files to exclude
   exclude: [],
@@ -19,6 +20,6 @@ export default defineConfig({
 
   // The output directory for your css system
   outExtension: 'js',
-  outdir: "styled-system",
-  jsxFramework: 'react'
-});
+  outdir: 'styled-system',
+  jsxFramework: 'react',
+})

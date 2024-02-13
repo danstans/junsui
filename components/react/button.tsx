@@ -5,5 +5,3 @@ import { button } from '../../styled-system/recipes'
 
 const ArkButton = styled(ark.button, button)
 export interface ButtonProps extends ComponentProps<typeof ArkButton> {}
-
-
