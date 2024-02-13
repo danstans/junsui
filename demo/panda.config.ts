@@ -1,10 +1,10 @@
 import { defineConfig } from "@pandacss/dev";
-import { createKyotoPreset } from "../packages/themes/kyoto";
+import { createJunsuiTheme } from "../packages/themes";
 
 export default defineConfig({
   // Whether to use css reset
   preflight: true,
-  presets: [createKyotoPreset()],
+  presets: [ ...createJunsuiTheme()],
 
   // Where to look for your css declarations
   include: ["./src/**/*.{js,jsx,ts,tsx}", "./pages/**/*.{js,jsx,ts,tsx}"],

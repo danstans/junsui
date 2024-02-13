@@ -1,16 +1,10 @@
 import { definePreset } from '@pandacss/dev'
 import type { Preset } from '@pandacss/types'
-import type { PresetOptions, Radius } from '../types'
-import { createSemanticTokens } from '../utils/createSemanticTokens'
-import {colors} from './colors';
-import { shadows } from './shadows';
-import { createTokens } from './tokens';
-import { breakpoints } from './breakpoints';
-import { keyframes } from './keyframes';
-import { recipes } from './recipes';
-import { textStyles } from './text-styles';
-import { conditions } from './conditions';
-import { globalCss } from './global-css';
+import type { PresetOptions, Radius } from '../utils/types'
+import { createKyotoSemanticTokens } from './createKyotoSemanticTokens'
+import { sharedTheme } from '../utils/shared-preset/theme';
+import { conditions } from '../utils/shared-preset/conditions';
+
 
 const defaultOptions: PresetOptions = {
   accentColor: 'neutral',
@@ -20,22 +14,16 @@ const defaultOptions: PresetOptions = {
 }
 
 const createKyotoPreset = (options: PresetOptions = defaultOptions): Preset => {
-    const semanticTokens = createSemanticTokens(options, colors, shadows);
-    const tokens = createTokens(options)
-  
+    const kyotoSemanticTokens = createKyotoSemanticTokens()
+        
     return definePreset({
       theme: {
         extend: {
-          breakpoints,
-          keyframes,
-          recipes,
-          semanticTokens,
-          textStyles,
-          tokens,
+          ...sharedTheme({breakpointOptions: {system: 'chakra'}, tokenOptions: options}),
+          semanticTokens: kyotoSemanticTokens
         },
       },
       conditions,
-      globalCss,
     })
   }
   
