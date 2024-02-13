@@ -3,6 +3,8 @@
   "module": "index.ts",
   "type": "module",
   "devDependencies": {
+    "@pandacss/dev": "^0.30.2",
+    "@amandaguthrie/panda-preset-color-radix": "^0.1.0",
     "@types/bun": "latest"
   },
   "peerDependencies": {
