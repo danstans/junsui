@@ -1,5 +1,5 @@
 import { defineConfig } from "@pandacss/dev";
-import { createKyotoPreset } from "./packages/themes/kyoto";
+import { createKyotoPreset } from "../packages/themes/kyoto";
 
 export default defineConfig({
   // Whether to use css reset
