@@ -8,6 +8,7 @@
     "build": "astro check && astro build",
     "build:studio": "panda studio --build --outdir src/pages/studio",
     "preview": "astro preview",
+    "panda:init": "panda init",
     "astro": "astro"
   },
   "dependencies": {
