@@ -5,7 +5,7 @@ import { createJunsuiTheme } from '@junsui/themes'
 export default defineConfig({
   // Whether to use css reset
   preflight: true,
-  presets: [...createJunsuiTheme({ theme: 'kyoto' })],
+  presets: [...createJunsuiTheme({ theme: process.env.PANDA_THEME })],
 
   // Where to look for your css declarations
   include: ['./src/**/*.{ts,tsx,js,jsx,astro}', './pages/**/*.{ts,tsx,js,jsx,astro}'],
