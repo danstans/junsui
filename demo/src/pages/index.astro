@@ -1,7 +1,17 @@
 ---
 import "../index.css"
-
 import { css } from "../../styled-system/css";
+import { Center } from "../../styled-system/jsx";
+const theme = import.meta.env.PANDA_THEME
+
+const getKanjiByTheme = () => {
+	switch (theme) {
+		case 'tokyo':
+			return '東京'
+		default:
+			return '京都'
+	}
+}
 
 ---
 
@@ -14,6 +24,6 @@ import { css } from "../../styled-system/css";
 		<title>Astro</title>
 	</head>
 	<body>
-		<p class={css({textStyle: '7xl'})}>hello {import.meta.env.PANDA_THEME}</p>
+		<Center className={css({textStyle: '7xl', height: '100vh' })}>{getKanjiByTheme()}</Center>
 	</body>
 </html>
