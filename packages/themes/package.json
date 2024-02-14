@@ -1,13 +1,30 @@
 {
-  "name": "themes",
-  "module": "index.ts",
+  "name": "@junsui/themes",
+  "version": "0.0.1",
   "type": "module",
+  "files": ["dist", "src"],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "release": "release-it",
+    "build": "tsup"
+  },
   "devDependencies": {
+    "release-it": "^17.0.3",
     "@pandacss/dev": "^0.30.2",
     "@amandaguthrie/panda-preset-color-radix": "^0.1.0",
     "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "tsup": {
+    "entry": [
+      "./index.ts"
+    ],
+    "clean": true,
+    "minify": true,
+    "format": ["cjs"]
   }
 }
