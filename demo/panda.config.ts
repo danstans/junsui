@@ -1,5 +1,6 @@
 import { defineConfig } from '@pandacss/dev'
-import { createJunsuiTheme } from '../packages/themes'
+// @ts-ignore
+import { createJunsuiTheme } from '@junsui/themes'
 
 export default defineConfig({
   // Whether to use css reset
