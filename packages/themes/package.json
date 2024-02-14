@@ -31,5 +31,6 @@
     "format": [
       "cjs"
     ]
-  }
+  },
+  "main": "./dist/index.cjs"
 }
