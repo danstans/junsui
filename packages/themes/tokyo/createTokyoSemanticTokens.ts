@@ -7,7 +7,10 @@ export const createTokyoSemanticTokens = (options?: PresetOptions) => {
       bg: {
         canvas: { value: "{colors.radix.gray.1}" },
         default: {
-          value: { base: "{colors.white}", _dark: "{colors.radix.violet.2}" },
+          value: {
+            base: "{colors.white}",
+            _dark: "{colors.radix.violet.2.dark}",
+          },
         },
         subtle: {
           value: {
