@@ -7,7 +7,7 @@ export default defineConfig({
   preflight: true,
   presets: [
     ...createJunsuiTheme({
-      theme: process.env.PANDA_THEME,
+      theme: process.env.PANDA_THEME as "kyoto" | "tokyo" | undefined,
     }),
   ],
 
