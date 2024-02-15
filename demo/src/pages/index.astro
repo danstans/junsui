@@ -2,6 +2,7 @@
 import "../index.css"
 import { css } from "../../styled-system/css";
 import { Center } from "../../styled-system/jsx";
+import { SiteHeader } from '../components/SiteHeader'
 const theme = import.meta.env.PANDA_THEME
 
 const getKanjiByTheme = () => {
@@ -23,7 +24,8 @@ const getKanjiByTheme = () => {
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
-	<body>
+	<body class={css({background: 'bg.default', color: 'fg.default'})}>
+		<SiteHeader />
 		<Center className={css({textStyle: '7xl', height: '100vh' })}>{getKanjiByTheme()}</Center>
 	</body>
 </html>
