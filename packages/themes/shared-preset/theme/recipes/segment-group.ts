@@ -1,7 +1,7 @@
 import { segmentGroupAnatomy } from '@ark-ui/anatomy'
 import { defineSlotRecipe } from '@pandacss/dev'
 
-export const segmentGroup = defineSlotRecipe({
+export const segmentGroupRecipe = defineSlotRecipe({
   className: 'segmentGroup',
   slots: segmentGroupAnatomy.keys(),
   base: {

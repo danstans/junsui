@@ -1,6 +1,6 @@
 import { defineSlotRecipe } from '@pandacss/dev'
 
-export const table = defineSlotRecipe({
+export const tableRecipe = defineSlotRecipe({
   className: 'table',
   slots: ['root', 'body', 'cell', 'footer', 'head', 'header', 'row', 'caption'],
   base: {

@@ -1,6 +1,6 @@
 import { defineSlotRecipe } from '@pandacss/dev'
 
-export const alert = defineSlotRecipe({
+export const alertRecipe = defineSlotRecipe({
   className: 'alert',
   slots: ['root', 'content', 'description', 'icon', 'title'],
   base: {

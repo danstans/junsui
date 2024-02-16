@@ -1,7 +1,7 @@
 import { selectAnatomy } from '@ark-ui/anatomy'
 import { defineSlotRecipe } from '@pandacss/dev'
 
-export const select = defineSlotRecipe({
+export const selectRecipe = defineSlotRecipe({
   className: 'select',
   slots: selectAnatomy.keys(),
   base: {

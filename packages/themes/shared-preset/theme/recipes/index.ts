@@ -1,102 +1,100 @@
-import { accordion } from './accordion'
-import { alert } from './alert'
-import { avatar } from './avatar'
-import { badge } from './badge'
-import { button } from './button'
-import { card } from './card'
-import { carousel } from './carousel'
-import { checkbox } from './checkbox'
-import { clipboard } from './clipboard'
-import { code } from './code'
-import { colorPicker } from './color-picker'
-import { combobox } from './combobox'
-import { datePicker } from './date-picker'
-import { dialog } from './dialog'
-import { drawer } from './drawer'
-import { editable } from './editable'
-import { fileUpload } from './file-upload'
-import { formLabel } from './form-label'
-import { hoverCard } from './hover-card'
-import { icon } from './icon'
-import { iconButton } from './icon-button'
-import { input } from './input'
-import { kbd } from './kbd'
-import { link } from './link'
-import { menu } from './menu'
-import { numberInput } from './number-input'
-import { pagination } from './pagination'
-import { pinInput } from './pin-input'
-import { popover } from './popover'
-import { progress } from './progress'
-import { radioButtonGroup } from './radio-button-group'
-import { radioGroup } from './radio-group'
-import { ratingGroup } from './rating-group'
-import { segmentGroup } from './segment-group'
-import { select } from './select'
-import { skeleton } from './skeleton'
-import { slider } from './slider'
-import { splitter } from './splitter'
+import { accordionRecipe } from './accordion'
+import { alertRecipe } from './alert'
+import { avatarRecipe } from './avatar'
+import { badgeRecipe } from './badge'
+import { buttonRecipe } from './button'
+import { cardRecipe } from './card'
+import { carouselRecipe } from './carousel'
+import { checkboxRecipe } from './checkbox'
+import { codeRecipe } from './code'
+import { colorPickerRecipe } from './color-picker'
+import { comboboxRecipe } from './combobox'
+import { datePickerRecipe } from './date-picker'
+import { dialogRecipe } from './dialog'
+import { drawerRecipe } from './drawer'
+import { editableRecipe } from './editable'
+import { fileUploadRecipe } from './file-upload'
+import { formLabelRecipe } from './form-label'
+import { hoverCardRecipe } from './hover-card'
+import { iconRecipe } from './icon'
+import { iconButtonRecipe } from './icon-button'
+import { inputRecipe } from './input'
+import { kbdRecipe } from './kbd'
+import { linkRecipe } from './link'
+import { menuRecipe } from './menu'
+import { numberInputRecipe } from './number-input'
+import { paginationRecipe } from './pagination'
+import { pinInputRecipe } from './pin-input'
+import { popoverRecipe } from './popover'
+import { progressRecipe } from './progress'
+import { radioButtonGroupRecipe } from './radio-button-group'
+import { radioGroupRecipe } from './radio-group'
+import { ratingGroupRecipe } from './rating-group'
+import { segmentGroupRecipe } from './segment-group'
+import { selectRecipe } from './select'
+import { skeletonRecipe } from './skeleton'
+import { sliderRecipe } from './slider'
+import { splitterRecipe } from './splitter'
 import { switchRecipe } from './switch'
-import { table } from './table'
-import { tabs } from './tabs'
-import { tagsInput } from './tags-input'
-import { text } from './text'
-import { textarea } from './textarea'
-import { toast } from './toast'
-import { toggleGroup } from './toggle-group'
-import { tooltip } from './tooltip'
-import { treeView } from './tree-view'
+import { tableRecipe } from './table'
+import { tabsRecipe } from './tabs'
+import { tagsInputRecipe } from './tags-input'
+import { textRecipe } from './text'
+import { textareaRecipe } from './textarea'
+import { toastRecipe } from './toast'
+import { toggleGroupRecipe } from './toggle-group'
+import { tooltipRecipe } from './tooltip'
+import { treeViewRecipe } from './tree-view'
 
 export const recipes = {
-  badge,
-  button,
-  code,
-  formLabel,
-  icon,
-  iconButton,
-  input,
-  kbd,
-  link,
-  skeleton,
-  textarea,
-  text,
+  badgeRecipe,
+  buttonRecipe,
+  codeRecipe,
+  formLabelRecipe,
+  iconRecipe,
+  iconButtonRecipe,
+  inputRecipe,
+  kbdRecipe,
+  linkRecipe,
+  skeletonRecipe,
+  textareaRecipe,
+  textRecipe,
 }
 
 export const slotRecipes = {
-  accordion,
-  alert,
-  avatar,
-  card,
-  carousel,
-  checkbox,
-  clipboard,
-  colorPicker,
-  combobox,
-  datePicker,
-  dialog,
-  drawer,
-  editable,
-  fileUpload,
-  hoverCard,
-  menu,
-  numberInput,
-  pagination,
-  pinInput,
-  popover,
-  progress,
-  radioButtonGroup,
-  radioGroup,
-  ratingGroup,
-  segmentGroup,
-  select,
-  slider,
-  splitter,
+  accordionRecipe,
+  alertRecipe,
+  avatarRecipe,
+  cardRecipe,
+  carouselRecipe,
+  checkboxRecipe,
+  colorPickerRecipe,
+  comboboxRecipe,
+  datePickerRecipe,
+  dialogRecipe,
+  drawerRecipe,
+  editableRecipe,
+  fileUploadRecipe,
+  hoverCardRecipe,
+  menuRecipe,
+  numberInputRecipe,
+  paginationRecipe,
+  pinInputRecipe,
+  popoverRecipe,
+  progressRecipe,
+  radioButtonGroupRecipe,
+  radioGroupRecipe,
+  ratingGroupRecipe,
+  segmentGroupRecipe,
+  selectRecipe,
+  sliderRecipe,
+  splitterRecipe,
   switchRecipe,
-  table,
-  tabs,
-  tagsInput,
-  toast,
-  toggleGroup,
-  tooltip,
-  treeView,
+  tableRecipe,
+  tabsRecipe,
+  tagsInputRecipe,
+  toastRecipe,
+  toggleGroupRecipe,
+  tooltipRecipe,
+  treeViewRecipe,
 }

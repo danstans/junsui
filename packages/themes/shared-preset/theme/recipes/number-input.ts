@@ -29,7 +29,7 @@ const trigger = {
   },
 }
 
-export const numberInput = defineSlotRecipe({
+export const numberInputRecipe = defineSlotRecipe({
   className: 'numberInput',
   slots: numberInputAnatomy.keys(),
   base: {

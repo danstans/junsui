@@ -1,9 +1,9 @@
 import { defineRecipe } from '@pandacss/dev'
 import deepmerge from 'deepmerge'
-import { button } from './button'
+import { buttonRecipe } from './button'
 
-export const iconButton = deepmerge(
-  button,
+export const iconButtonRecipe = deepmerge(
+  buttonRecipe,
   defineRecipe({
     className: 'iconButton',
     variants: {

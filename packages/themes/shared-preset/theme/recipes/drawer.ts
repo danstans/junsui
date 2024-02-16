@@ -3,7 +3,7 @@ import { defineSlotRecipe } from '@pandacss/dev'
 
 const anatomy = dialogAnatomy.extendWith('header', 'body', 'footer')
 
-export const drawer = defineSlotRecipe({
+export const drawerRecipe = defineSlotRecipe({
   className: 'drawer',
   slots: [...anatomy.keys()],
   base: {

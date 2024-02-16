@@ -1,7 +1,7 @@
 import { splitterAnatomy } from '@ark-ui/anatomy'
 import { defineSlotRecipe } from '@pandacss/dev'
 
-export const splitter = defineSlotRecipe({
+export const splitterRecipe = defineSlotRecipe({
   className: 'splitter',
   slots: splitterAnatomy.keys(),
   base: {

@@ -1,7 +1,7 @@
 import { dialogAnatomy } from '@ark-ui/anatomy'
 import { defineSlotRecipe } from '@pandacss/dev'
 
-export const dialog = defineSlotRecipe({
+export const dialogRecipe = defineSlotRecipe({
   className: 'dialog',
   slots: dialogAnatomy.keys(),
   base: {

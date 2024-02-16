@@ -1,7 +1,7 @@
 import { carouselAnatomy } from '@ark-ui/anatomy'
 import { defineSlotRecipe } from '@pandacss/dev'
 
-export const carousel = defineSlotRecipe({
+export const carouselRecipe = defineSlotRecipe({
   className: 'carousel',
   slots: carouselAnatomy.keys(),
   base: {

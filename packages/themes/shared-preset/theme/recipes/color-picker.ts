@@ -1,7 +1,7 @@
 import { colorPickerAnatomy } from '@ark-ui/anatomy'
 import { defineSlotRecipe } from '@pandacss/dev'
 
-export const colorPicker = defineSlotRecipe({
+export const colorPickerRecipe = defineSlotRecipe({
   className: 'colorPicker',
   slots: colorPickerAnatomy.keys(),
   base: {

@@ -1,7 +1,7 @@
 import { progressAnatomy } from '@ark-ui/anatomy'
 import { defineSlotRecipe } from '@pandacss/dev'
 
-export const progress = defineSlotRecipe({
+export const progressRecipe = defineSlotRecipe({
   className: 'progress',
   slots: progressAnatomy.keys(),
   base: {

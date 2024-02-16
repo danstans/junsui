@@ -25,7 +25,7 @@ const itemStyle = {
   },
 }
 
-export const menu = defineSlotRecipe({
+export const menuRecipe = defineSlotRecipe({
   className: 'menu',
   slots: menuAnatomy.keys(),
   base: {

@@ -1,7 +1,7 @@
 import { datePickerAnatomy } from '@ark-ui/anatomy'
 import { defineSlotRecipe } from '@pandacss/dev'
 
-export const datePicker = defineSlotRecipe({
+export const datePickerRecipe = defineSlotRecipe({
   className: 'datePicker',
   slots: [...datePickerAnatomy.keys()],
   base: {

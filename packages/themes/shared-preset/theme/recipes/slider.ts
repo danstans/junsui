@@ -1,7 +1,7 @@
 import { sliderAnatomy } from '@ark-ui/anatomy'
 import { defineSlotRecipe } from '@pandacss/dev'
 
-export const slider = defineSlotRecipe({
+export const sliderRecipe = defineSlotRecipe({
   className: 'slider',
   slots: sliderAnatomy.keys(),
   base: {

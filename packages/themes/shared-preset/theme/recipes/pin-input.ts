@@ -1,7 +1,7 @@
 import { pinInputAnatomy } from '@ark-ui/anatomy'
 import { defineSlotRecipe } from '@pandacss/dev'
 
-export const pinInput = defineSlotRecipe({
+export const pinInputRecipe = defineSlotRecipe({
   className: 'pinInput',
   slots: pinInputAnatomy.keys(),
   base: {
