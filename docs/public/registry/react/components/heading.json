@@ -1,9 +1,1 @@
-{
-  "files": [
-    {
-      "filename": "heading.tsx",
-      "content": "import { forwardRef } from 'react'\nimport { Text, type TextProps } from './text'\n\nexport type HeadingProps = Omit<TextProps, 'variant'> & {\n  as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'\n}\n\nexport const Heading = forwardRef<HTMLHeadingElement, HeadingProps>((props, ref) => {\n  const { as = 'h2', ...textProps } = props\n  return <Text ref={ref} as={as} variant=\"heading\" {...textProps} />\n})\n\nHeading.displayName = 'Heading'\n",
-      "hasMultipleParts": false
-    }
-  ]
-}
+{"files":[{"filename":"heading.tsx","content":"import { forwardRef } from 'react'\nimport { Text, type TextProps } from './text'\n\nexport type HeadingProps = Omit<TextProps, 'variant'> & {\n  as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'\n}\n\nexport const Heading = forwardRef<HTMLHeadingElement, HeadingProps>((props, ref) => {\n  const { as = 'h2', ...textProps } = props\n  return <Text ref={ref} as={as} variant=\"heading\" {...textProps} />\n})\n\nHeading.displayName = 'Heading'\n","hasMultipleParts":false}]}

@@ -1,9 +1,1 @@
-{
-  "files": [
-    {
-      "filename": "text.tsx",
-      "content": "import { useMemo } from 'react'\nimport { styled, type HTMLStyledProps, type StyledComponent } from 'styled-system/jsx'\nimport { text, type TextVariantProps } from 'styled-system/recipes'\n\ntype As = 'p' | 'span' | 'div' | 'label' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'\n\nexport type TextProps = {\n  as?: As\n} & TextVariantProps &\n  HTMLStyledProps<As>\n\nexport const Text = (props: TextProps) => {\n  const { as = 'p', ...localProps } = props\n  const Dynamic = useMemo(() => styled(as, text) as StyledComponent<As>, [as])\n\n  return <Dynamic {...localProps} />\n}\n",
-      "hasMultipleParts": false
-    }
-  ]
-}
+{"files":[{"filename":"text.tsx","content":"import { useMemo } from \"react\";\nimport {\n  styled,\n  type HTMLStyledProps,\n  type StyledComponent,\n} from \"~/styled-system/jsx\";\nimport {\n  textRecipe,\n  type TextRecipeVariantProps,\n} from \"~/styled-system/recipes\";\n\ntype As =\n  | \"p\"\n  | \"span\"\n  | \"div\"\n  | \"label\"\n  | \"h1\"\n  | \"h2\"\n  | \"h3\"\n  | \"h4\"\n  | \"h5\"\n  | \"h6\";\n\nexport type TextProps = {\n  as?: As;\n} & TextRecipeVariantProps &\n  HTMLStyledProps<As>;\n\nexport const Text = (props: TextProps) => {\n  const { as = \"p\", ...localProps } = props;\n  const Dynamic = useMemo(\n    () => styled(as, textRecipe) as StyledComponent<As>,\n    [as]\n  );\n\n  return <Dynamic {...localProps} />;\n};\n","hasMultipleParts":false}]}

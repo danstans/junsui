@@ -1,9 +1,1 @@
-{
-  "files": [
-    {
-      "filename": "Avatar.vue",
-      "content": "<script setup lang=\"ts\">\nimport { Avatar as AvatarRoot, AvatarFallback, AvatarImage } from '@ark-ui/vue/avatar'\n\n\n\nconst { src, name, ...rest } = defineProps( {src: String, name: String});\n\n</script>\n\n<template>\n    <AvatarRoot :class=\"styles.root\" v-bind=\"rest\">\n        <AvatarFallback :class=\"styles.fallback\">PA</AvatarFallback>\n        <AvatarImage :src=\"src\" :alt=\"name\" ></AvatarImage>\n    </AvatarRoot>\n</template>",
-      "hasMultipleParts": false
-    }
-  ]
-}
+{"files":[{"filename":"Avatar.vue","content":"<script setup lang=\"ts\">\nimport { Avatar as AvatarRoot, AvatarFallback, AvatarImage } from '@ark-ui/vue/avatar'\n\n\n\nconst { src, name, ...rest } = defineProps( {src: String, name: String});\n\n</script>\n\n<template>\n    <AvatarRoot :class=\"styles.root\" v-bind=\"rest\">\n        <AvatarFallback :class=\"styles.fallback\">PA</AvatarFallback>\n        <AvatarImage :src=\"src\" :alt=\"name\" ></AvatarImage>\n    </AvatarRoot>\n</template>","hasMultipleParts":false}]}
