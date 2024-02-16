@@ -1,6 +1,6 @@
 import { defineRecipe } from '@pandacss/dev'
 
-const buttonRecipe = defineRecipe({
+export const button = defineRecipe({
   className: 'button',
   base: {
     alignItems: 'center',
@@ -213,5 +213,3 @@ const buttonRecipe = defineRecipe({
     },
   },
 })
-
-export default buttonRecipe

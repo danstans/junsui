@@ -9,7 +9,7 @@ export const createTokyoSemanticTokens = (options?: PresetOptions) => {
         default: {
           value: {
             base: "{colors.white}",
-            _dark: "{colors.radix.violet.2.dark}",
+            _dark: "{colors.radix.sky.2.dark}",
           },
         },
         subtle: {
