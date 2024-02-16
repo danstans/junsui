@@ -2,6 +2,13 @@
   "name": "@junsui/react-components",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "prepare": "panda codegen"
+  },
+  "dependencies": {
+    "@pandacss/dev": "^0.31.0",
+    "@junsui/themes": "workspace:*"
+  },
   "devDependencies": {
     "bun-types": "latest"
   },

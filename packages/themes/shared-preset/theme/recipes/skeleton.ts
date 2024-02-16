@@ -1,6 +1,6 @@
 import { defineRecipe } from '@pandacss/dev'
 
-export const skeleton = defineRecipe({
+export const skeletonRecipe = defineRecipe({
   className: 'skeleton',
   base: {
     animation: 'skeleton-pulse',

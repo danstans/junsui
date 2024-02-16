@@ -1,6 +1,6 @@
 import { defineRecipe } from '@pandacss/dev'
 
-export const link = defineRecipe({
+export const linkRecipe = defineRecipe({
   className: 'link',
   base: {
     alignItems: 'center',

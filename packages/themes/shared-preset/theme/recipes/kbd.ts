@@ -1,6 +1,6 @@
 import { defineRecipe } from '@pandacss/dev'
 
-export const kbd = defineRecipe({
+export const kbdRecipe = defineRecipe({
   className: 'kbd',
   base: {
     alignItems: 'center',

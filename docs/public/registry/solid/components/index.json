@@ -1,1 +1,192 @@
-{"components":[{"name":"Accordion","href":"https://junsui.com/registry/solid/components/accordion.json"},{"name":"Alert","href":"https://junsui.com/registry/solid/components/alert.json"},{"name":"Avatar","href":"https://junsui.com/registry/solid/components/avatar.json"},{"name":"Badge","href":"https://junsui.com/registry/solid/components/badge.json"},{"name":"Button","href":"https://junsui.com/registry/solid/components/button.json"},{"name":"Card","href":"https://junsui.com/registry/solid/components/card.json"},{"name":"Carousel","href":"https://junsui.com/registry/solid/components/carousel.json"},{"name":"Checkbox","href":"https://junsui.com/registry/solid/components/checkbox.json"},{"name":"Code","href":"https://junsui.com/registry/solid/components/code.json"},{"name":"Color Picker","href":"https://junsui.com/registry/solid/components/color-picker.json"},{"name":"Combobox","href":"https://junsui.com/registry/solid/components/combobox.json"},{"name":"Date Picker","href":"https://junsui.com/registry/solid/components/date-picker.json"},{"name":"Dialog","href":"https://junsui.com/registry/solid/components/dialog.json"},{"name":"Drawer","href":"https://junsui.com/registry/solid/components/drawer.json"},{"name":"Editable","href":"https://junsui.com/registry/solid/components/editable.json"},{"name":"File Upload","href":"https://junsui.com/registry/solid/components/file-upload.json"},{"name":"Form Label","href":"https://junsui.com/registry/solid/components/form-label.json"},{"name":"Heading","href":"https://junsui.com/registry/solid/components/heading.json"},{"name":"Hover Card","href":"https://junsui.com/registry/solid/components/hover-card.json"},{"name":"Icon Button","href":"https://junsui.com/registry/solid/components/icon-button.json"},{"name":"Icon","href":"https://junsui.com/registry/solid/components/icon.json"},{"name":"Input","href":"https://junsui.com/registry/solid/components/input.json"},{"name":"Kbd","href":"https://junsui.com/registry/solid/components/kbd.json"},{"name":"Link","href":"https://junsui.com/registry/solid/components/link.json"},{"name":"Menu","href":"https://junsui.com/registry/solid/components/menu.json"},{"name":"Number Input","href":"https://junsui.com/registry/solid/components/number-input.json"},{"name":"Pagination","href":"https://junsui.com/registry/solid/components/pagination.json"},{"name":"Pin Input","href":"https://junsui.com/registry/solid/components/pin-input.json"},{"name":"Popover","href":"https://junsui.com/registry/solid/components/popover.json"},{"name":"Progress","href":"https://junsui.com/registry/solid/components/progress.json"},{"name":"Radio Button Group","href":"https://junsui.com/registry/solid/components/radio-button-group.json"},{"name":"Radio Group","href":"https://junsui.com/registry/solid/components/radio-group.json"},{"name":"Rating Group","href":"https://junsui.com/registry/solid/components/rating-group.json"},{"name":"Segment Group","href":"https://junsui.com/registry/solid/components/segment-group.json"},{"name":"Select","href":"https://junsui.com/registry/solid/components/select.json"},{"name":"Skeleton","href":"https://junsui.com/registry/solid/components/skeleton.json"},{"name":"Slider","href":"https://junsui.com/registry/solid/components/slider.json"},{"name":"Splitter","href":"https://junsui.com/registry/solid/components/splitter.json"},{"name":"Switch","href":"https://junsui.com/registry/solid/components/switch.json"},{"name":"Table","href":"https://junsui.com/registry/solid/components/table.json"},{"name":"Tabs","href":"https://junsui.com/registry/solid/components/tabs.json"},{"name":"Tags Input","href":"https://junsui.com/registry/solid/components/tags-input.json"},{"name":"Text","href":"https://junsui.com/registry/solid/components/text.json"},{"name":"Textarea","href":"https://junsui.com/registry/solid/components/textarea.json"},{"name":"Toast","href":"https://junsui.com/registry/solid/components/toast.json"},{"name":"Toggle Group","href":"https://junsui.com/registry/solid/components/toggle-group.json"},{"name":"Tooltip","href":"https://junsui.com/registry/solid/components/tooltip.json"}]}
+{
+  "components": [
+    {
+      "name": "Accordion",
+      "href": "https://junsui.com/registry/solid/components/accordion.json"
+    },
+    {
+      "name": "Alert",
+      "href": "https://junsui.com/registry/solid/components/alert.json"
+    },
+    {
+      "name": "Avatar",
+      "href": "https://junsui.com/registry/solid/components/avatar.json"
+    },
+    {
+      "name": "Badge",
+      "href": "https://junsui.com/registry/solid/components/badge.json"
+    },
+    {
+      "name": "Button",
+      "href": "https://junsui.com/registry/solid/components/button.json"
+    },
+    {
+      "name": "Card",
+      "href": "https://junsui.com/registry/solid/components/card.json"
+    },
+    {
+      "name": "Carousel",
+      "href": "https://junsui.com/registry/solid/components/carousel.json"
+    },
+    {
+      "name": "Checkbox",
+      "href": "https://junsui.com/registry/solid/components/checkbox.json"
+    },
+    {
+      "name": "Code",
+      "href": "https://junsui.com/registry/solid/components/code.json"
+    },
+    {
+      "name": "Color Picker",
+      "href": "https://junsui.com/registry/solid/components/color-picker.json"
+    },
+    {
+      "name": "Combobox",
+      "href": "https://junsui.com/registry/solid/components/combobox.json"
+    },
+    {
+      "name": "Date Picker",
+      "href": "https://junsui.com/registry/solid/components/date-picker.json"
+    },
+    {
+      "name": "Dialog",
+      "href": "https://junsui.com/registry/solid/components/dialog.json"
+    },
+    {
+      "name": "Drawer",
+      "href": "https://junsui.com/registry/solid/components/drawer.json"
+    },
+    {
+      "name": "Editable",
+      "href": "https://junsui.com/registry/solid/components/editable.json"
+    },
+    {
+      "name": "File Upload",
+      "href": "https://junsui.com/registry/solid/components/file-upload.json"
+    },
+    {
+      "name": "Form Label",
+      "href": "https://junsui.com/registry/solid/components/form-label.json"
+    },
+    {
+      "name": "Heading",
+      "href": "https://junsui.com/registry/solid/components/heading.json"
+    },
+    {
+      "name": "Hover Card",
+      "href": "https://junsui.com/registry/solid/components/hover-card.json"
+    },
+    {
+      "name": "Icon Button",
+      "href": "https://junsui.com/registry/solid/components/icon-button.json"
+    },
+    {
+      "name": "Icon",
+      "href": "https://junsui.com/registry/solid/components/icon.json"
+    },
+    {
+      "name": "Input",
+      "href": "https://junsui.com/registry/solid/components/input.json"
+    },
+    {
+      "name": "Kbd",
+      "href": "https://junsui.com/registry/solid/components/kbd.json"
+    },
+    {
+      "name": "Link",
+      "href": "https://junsui.com/registry/solid/components/link.json"
+    },
+    {
+      "name": "Menu",
+      "href": "https://junsui.com/registry/solid/components/menu.json"
+    },
+    {
+      "name": "Number Input",
+      "href": "https://junsui.com/registry/solid/components/number-input.json"
+    },
+    {
+      "name": "Pagination",
+      "href": "https://junsui.com/registry/solid/components/pagination.json"
+    },
+    {
+      "name": "Pin Input",
+      "href": "https://junsui.com/registry/solid/components/pin-input.json"
+    },
+    {
+      "name": "Popover",
+      "href": "https://junsui.com/registry/solid/components/popover.json"
+    },
+    {
+      "name": "Progress",
+      "href": "https://junsui.com/registry/solid/components/progress.json"
+    },
+    {
+      "name": "Radio Button Group",
+      "href": "https://junsui.com/registry/solid/components/radio-button-group.json"
+    },
+    {
+      "name": "Radio Group",
+      "href": "https://junsui.com/registry/solid/components/radio-group.json"
+    },
+    {
+      "name": "Rating Group",
+      "href": "https://junsui.com/registry/solid/components/rating-group.json"
+    },
+    {
+      "name": "Segment Group",
+      "href": "https://junsui.com/registry/solid/components/segment-group.json"
+    },
+    {
+      "name": "Select",
+      "href": "https://junsui.com/registry/solid/components/select.json"
+    },
+    {
+      "name": "Skeleton",
+      "href": "https://junsui.com/registry/solid/components/skeleton.json"
+    },
+    {
+      "name": "Slider",
+      "href": "https://junsui.com/registry/solid/components/slider.json"
+    },
+    {
+      "name": "Splitter",
+      "href": "https://junsui.com/registry/solid/components/splitter.json"
+    },
+    {
+      "name": "Switch",
+      "href": "https://junsui.com/registry/solid/components/switch.json"
+    },
+    {
+      "name": "Table",
+      "href": "https://junsui.com/registry/solid/components/table.json"
+    },
+    {
+      "name": "Tabs",
+      "href": "https://junsui.com/registry/solid/components/tabs.json"
+    },
+    {
+      "name": "Tags Input",
+      "href": "https://junsui.com/registry/solid/components/tags-input.json"
+    },
+    {
+      "name": "Text",
+      "href": "https://junsui.com/registry/solid/components/text.json"
+    },
+    {
+      "name": "Textarea",
+      "href": "https://junsui.com/registry/solid/components/textarea.json"
+    },
+    {
+      "name": "Toast",
+      "href": "https://junsui.com/registry/solid/components/toast.json"
+    },
+    {
+      "name": "Toggle Group",
+      "href": "https://junsui.com/registry/solid/components/toggle-group.json"
+    },
+    {
+      "name": "Tooltip",
+      "href": "https://junsui.com/registry/solid/components/tooltip.json"
+    }
+  ]
+}

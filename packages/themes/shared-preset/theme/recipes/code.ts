@@ -1,6 +1,6 @@
 import { defineRecipe } from '@pandacss/dev'
 
-export const code = defineRecipe({
+export const codeRecipe = defineRecipe({
   className: 'code',
   base: {
     alignItems: 'center',
