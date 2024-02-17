@@ -1,8 +1,9 @@
 {
   "name": "@junsui/cli",
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build": "tsup",
+    "release": "tsup",
     "deploy": "release-it"
   },
   "dependencies": {
