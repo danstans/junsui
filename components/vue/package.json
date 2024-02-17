@@ -2,6 +2,9 @@
   "name": "@junsui/vue-components",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "prepare": "panda codegen"
+  },
   "devDependencies": {
     "bun-types": "latest"
   },

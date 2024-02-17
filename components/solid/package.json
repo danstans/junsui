@@ -2,6 +2,16 @@
   "name": "@junsui/solid-components",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "prepare": "panda codegen"
+  },
+  "dependencies": {
+    "solid-js": "^1.8.15",
+    "@ark-ui/solid": "2.1.1",
+    "@pandacss/dev": "^0.31.0",
+    "@junsui/themes": "workspace:*",
+    "lucide-solid": "0.331.0"
+  },
   "devDependencies": {
     "bun-types": "latest"
   },

@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { Avatar as AvatarRoot, AvatarFallback, AvatarImage } from '@ark-ui/vue/avatar'
+import { avatar } from '~/styled-system/recipes'
+
 
 
 
