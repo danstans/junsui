@@ -1,6 +1,6 @@
 {
   "name": "@junsui/cli",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "build": "tsup",
@@ -28,9 +28,6 @@
     "typescript": "5.3.3",
     "voca": "1.4.1",
     "yargs": "17.7.2"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
   },
   "tsup": {
     "entry": [
