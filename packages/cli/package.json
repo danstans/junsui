@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "release": "tsup",
-    "deploy": "release-it"
+    "build": "tsup",
+    "release": "release-it"
   },
   "dependencies": {
     "cosmiconfig": "^9.0.0",
