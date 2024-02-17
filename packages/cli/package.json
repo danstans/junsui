@@ -7,7 +7,7 @@
   },
   "main": "./index.ts",
   "bin": {
-    "park-ui": "dist/index.cjs"
+    "junsui": "dist/index.cjs"
   },
   "scripts": {
     "dev": "bun run ./index.ts",
