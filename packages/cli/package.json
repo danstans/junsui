@@ -1,8 +1,8 @@
 {
   "name": "@junsui/cli",
-  "module": "index.ts",
   "type": "module",
   "scripts": {
+    "build": "tsup",
     "deploy": "release-it"
   },
   "dependencies": {
@@ -30,5 +30,16 @@
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
-  }
+  },
+  "tsup": {
+    "entry": [
+      "./index.ts"
+    ],
+    "clean": true,
+    "minify": true,
+    "format": [
+      "cjs"
+    ]
+  },
+  "main": "./dist/index.cjs"
 }
