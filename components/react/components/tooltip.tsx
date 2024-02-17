@@ -1,17 +1,17 @@
-import { Tooltip } from "@ark-ui/react/tooltip";
-import type { ComponentProps } from "react";
-import { styled } from "~/styled-system/jsx";
-import { tooltipRecipe } from "~/styled-system/recipes";
-import { createStyleContext } from "~/lib/create-style-context";
+import { Tooltip } from '@ark-ui/react/tooltip'
+import type { ComponentProps } from 'react'
+import { styled } from '~/styled-system/jsx'
+import { tooltipRecipe } from '~/styled-system/recipes'
+import { createStyleContext } from '~/lib/create-style-context'
 
-const { withProvider, withContext } = createStyleContext(tooltipRecipe);
+const { withProvider, withContext } = createStyleContext(tooltipRecipe)
 
-export const Root = withProvider(Tooltip.Root);
-export const Arrow = withContext(styled(Tooltip.Arrow), "arrow");
-export const ArrowTip = withContext(styled(Tooltip.ArrowTip), "arrowTip");
-export const Content = withContext(styled(Tooltip.Content), "content");
-export const Positioner = withContext(styled(Tooltip.Positioner), "positioner");
-export const Trigger = withContext(styled(Tooltip.Trigger), "trigger");
+export const Root = withProvider(Tooltip.Root)
+export const Arrow = withContext(styled(Tooltip.Arrow), 'arrow')
+export const ArrowTip = withContext(styled(Tooltip.ArrowTip), 'arrowTip')
+export const Content = withContext(styled(Tooltip.Content), 'content')
+export const Positioner = withContext(styled(Tooltip.Positioner), 'positioner')
+export const Trigger = withContext(styled(Tooltip.Trigger), 'trigger')
 
 export interface RootProps extends ComponentProps<typeof Root> {}
 export interface ArrowProps extends ComponentProps<typeof Arrow> {}

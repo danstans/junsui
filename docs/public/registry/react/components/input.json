@@ -1,1 +1,9 @@
-{"files":[{"filename":"input.tsx","content":"import { ark } from \"@ark-ui/react/factory\";\nimport type { ComponentProps } from \"react\";\nimport { styled } from \"~/styled-system/jsx\";\nimport { inputRecipe } from \"~/styled-system/recipes\";\n\nexport const Input = styled(ark.input, inputRecipe);\nexport interface InputProps extends ComponentProps<typeof Input> {}\n","hasMultipleParts":false}]}
+{
+  "files": [
+    {
+      "filename": "input.tsx",
+      "content": "import { ark } from \"@ark-ui/react/factory\";\nimport type { ComponentProps } from \"react\";\nimport { styled } from \"~/styled-system/jsx\";\nimport { inputRecipe } from \"~/styled-system/recipes\";\n\nexport const Input = styled(ark.input, inputRecipe);\nexport interface InputProps extends ComponentProps<typeof Input> {}\n",
+      "hasMultipleParts": false
+    }
+  ]
+}

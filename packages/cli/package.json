@@ -1,8 +1,13 @@
 {
   "name": "@junsui/cli",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "type": "module",
+  "main": "./index.ts",
+  "bin": {
+    "park-ui": "dist/index.cjs"
+  },
   "scripts": {
+    "dev": "bun run ./index.ts",
     "build": "tsup",
     "release": "release-it"
   },
@@ -38,6 +43,5 @@
     "format": [
       "cjs"
     ]
-  },
-  "main": "./dist/index.cjs"
+  }
 }

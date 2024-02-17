@@ -19,9 +19,6 @@
     "@amandaguthrie/panda-preset-color-radix": "^0.1.0",
     "@types/bun": "latest"
   },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
-  },
   "tsup": {
     "entry": [
       "./index.ts"

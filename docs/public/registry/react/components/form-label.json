@@ -1,1 +1,9 @@
-{"files":[{"filename":"form-label.tsx","content":"import { ark } from \"@ark-ui/react/factory\";\nimport type { ComponentProps } from \"react\";\nimport { styled } from \"~/styled-system/jsx\";\nimport { formLabelRecipe } from \"~/styled-system/recipes\";\n\nexport const FormLabel = styled(ark.label, formLabelRecipe);\nexport interface FormLabelProps extends ComponentProps<typeof FormLabel> {}\n","hasMultipleParts":false}]}
+{
+  "files": [
+    {
+      "filename": "form-label.tsx",
+      "content": "import { ark } from \"@ark-ui/react/factory\";\nimport type { ComponentProps } from \"react\";\nimport { styled } from \"~/styled-system/jsx\";\nimport { formLabelRecipe } from \"~/styled-system/recipes\";\n\nexport const FormLabel = styled(ark.label, formLabelRecipe);\nexport interface FormLabelProps extends ComponentProps<typeof FormLabel> {}\n",
+      "hasMultipleParts": false
+    }
+  ]
+}
